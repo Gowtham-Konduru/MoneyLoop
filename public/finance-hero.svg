@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="mainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8B5CF6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="coinGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FBBF24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F59E0B;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="#F8FAFC" rx="20"/>
+  
+  <!-- Main Finance Symbol -->
+  <g class="finance-symbol">
+    <circle cx="200" cy="150" r="80" fill="url(#mainGradient)" opacity="0.9">
+      <animate attributeName="r" values="80;85;80" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.9;1;0.9" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Rupee Symbol -->
+    <text x="200" y="170" text-anchor="middle" fill="#FFF" font-size="80" font-weight="bold">₹</text>
+  </g>
+  
+  <!-- Animated Coins -->
+  <g class="coins">
+    <circle cx="80" cy="80" r="25" fill="url(#coinGradient)" opacity="0.8">
+      <animate attributeName="cy" values="80;70;80" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="80" y="85" text-anchor="middle" fill="#FFF" font-size="18" font-weight="bold">₹</text>
+    
+    <circle cx="320" cy="100" r="20" fill="url(#coinGradient)" opacity="0.7">
+      <animate attributeName="cy" values="100;90;100" dur="2.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <text x="320" y="104" text-anchor="middle" fill="#FFF" font-size="14" font-weight="bold">₹</text>
+    
+    <circle cx="100" cy="220" r="18" fill="url(#coinGradient)" opacity="0.6">
+      <animate attributeName="cy" values="220;210;220" dur="2.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="100" y="224" text-anchor="middle" fill="#FFF" font-size="12" font-weight="bold">₹</text>
+    
+    <circle cx="300" cy="200" r="22" fill="url(#coinGradient)" opacity="0.75">
+      <animate attributeName="cy" values="200;190;200" dur="2.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.75;1;0.75" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+    <text x="300" y="204" text-anchor="middle" fill="#FFF" font-size="16" font-weight="bold">₹</text>
+  </g>
+  
+  <!-- Trend Line -->
+  <path d="M50 150 Q150 100 200 150 T350 120" stroke="#10B981" stroke-width="4" fill="none" stroke-linecap="round">
+    <animate attributeName="d" values="M50 150 Q150 100 200 150 T350 120;M50 140 Q150 90 200 140 T350 110;M50 150 Q150 100 200 150 T350 120" dur="4s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Floating Elements -->
+  <g class="floating">
+    <circle cx="60" cy="60" r="6" fill="#6366F1" opacity="0.5">
+      <animate attributeName="cy" values="60;50;60" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="340" cy="50" r="5" fill="#8B5CF6" opacity="0.4">
+      <animate attributeName="cy" values="50;40;50" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="70" cy="180" r="4" fill="#10B981" opacity="0.3">
+      <animate attributeName="cy" values="180;170;180" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="330" cy="170" r="5" fill="#F59E0B" opacity="0.4">
+      <animate attributeName="cy" values="170;160;170" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Pulse Effect -->
+  <circle cx="200" cy="150" r="80" fill="none" stroke="#6366F1" stroke-width="2" opacity="0.3">
+    <animate attributeName="r" values="80;100;80" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0;0.3" dur="2s" repeatCount="indefinite"/>
+  </circle>
+</svg>
